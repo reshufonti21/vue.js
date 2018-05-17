@@ -28,15 +28,13 @@
 
 export default {
   name: 'login',
-  data: () => ({
-    blog: [
-      {
-        firstname: '',
-        email: '',
-        password: ''
-      }
-    ]
-  }),
+  data: () => {
+    return {
+      firstname: '',
+      email: '',
+      password: ''
+    }
+  },
   methods: {
     post: function () {
       this.$http.post('https://jsonplaceholder.typicode.com/posts/1', {
